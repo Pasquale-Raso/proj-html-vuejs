@@ -1,22 +1,26 @@
 <template>
-  <div class="box-header d-flex justify-content-between">
-    <!-- logo -->
-    <a href="#">
-      <img src="@/assets/avada-music-logo.png" alt="" />
-    </a>
-    <!-- entrata navbar -->
-    <div ref="myNav" class="overlay">
-      <div class="d-flex justify-content-between p-4">
+  <div class="fixed-top">
+    <div class="box-header">
+      <div class="d-flex justify-content-between">
+        <!-- logo -->
         <a href="#">
           <img src="@/assets/avada-music-logo.png" alt="" />
         </a>
-        <a class="closebtn" @click="closeNav()"> &times;</a>
-      </div>
-      <div v-for="link in links" :key="link" class="overlay-content">
-        <a href="#">{{ link }}</a>
+        <!-- entrata navbar -->
+        <div ref="myNav" class="overlay">
+          <div class="d-flex justify-content-between p-4">
+            <a href="#">
+              <img src="@/assets/avada-music-logo.png" alt="" />
+            </a>
+            <a class="closebtn" @click="closeNav()"> &times;</a>
+          </div>
+          <div v-for="link in links" :key="link" class="overlay-content">
+            <a href="#">{{ link }}</a>
+          </div>
+        </div>
+        <span class="openBtn" @click="openNav()">&#9776;</span>
       </div>
     </div>
-    <span class="openBtn" @click="openNav()">&#9776;</span>
   </div>
 </template>
 
@@ -49,7 +53,9 @@ export default {
 
 <style scoped lang="scss">
 @import "./src/sass/Variables.scss";
+
 .box-header {
+  background-color: transparent;
   color: $White-color;
   padding: 30px;
 }
