@@ -5,6 +5,8 @@
     <Sectionlive />
     <Main />
     <Sectionnews />
+    <Sectionvideo />
+    <Sectiondates />
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import Jumbotron from "@/components/Jumbotron.vue";
 import Sectionlive from "@/components/Sectionlive.vue";
 import Main from "@/components/Main.vue";
 import Sectionnews from "@/components/Sectionnews.vue";
+import Sectionvideo from "@/components/Sectionvideo.vue";
+import Sectiondates from "@/components/Sectiondates.vue";
 
 export default {
   name: "App",
@@ -23,6 +27,8 @@ export default {
     Sectionlive: Sectionlive,
     Main: Main,
     Sectionnews: Sectionnews,
+    Sectionvideo: Sectionvideo,
+    Sectiondates: Sectiondates,
   },
 };
 </script>
