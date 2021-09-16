@@ -3,6 +3,7 @@
     <Header />
     <Jumbotron />
     <Sectionlive />
+    <Main />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from "@/components/Header.vue";
 import Jumbotron from "@/components/Jumbotron.vue";
 import Sectionlive from "@/components/Sectionlive.vue";
+import Main from "@/components/Main.vue";
 
 export default {
   name: "App",
@@ -17,6 +19,7 @@ export default {
     Jumbotron: Jumbotron,
     Header: Header,
     Sectionlive: Sectionlive,
+    Main: Main,
   },
 };
 </script>

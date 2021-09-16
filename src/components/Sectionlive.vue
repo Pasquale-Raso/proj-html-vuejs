@@ -23,7 +23,7 @@ export default {
 <style scoped lang="scss">
 @import "./src/sass/Variables.scss";
 .box-sectionlive {
-  background-color: $Charade2-color;
+  background-color: $card-cap-bg;
   position: relative;
   text-align: center;
   color: $White-color;
