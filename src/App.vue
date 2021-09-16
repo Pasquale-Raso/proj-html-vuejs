@@ -7,6 +7,8 @@
     <Sectionnews />
     <Sectionvideo />
     <Sectiondates />
+    <Sectionview />
+    <Footer />
   </div>
 </template>
 
@@ -18,6 +20,8 @@ import Main from "@/components/Main.vue";
 import Sectionnews from "@/components/Sectionnews.vue";
 import Sectionvideo from "@/components/Sectionvideo.vue";
 import Sectiondates from "@/components/Sectiondates.vue";
+import Sectionview from "@/components/Sectionview.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "App",
@@ -29,6 +33,8 @@ export default {
     Sectionnews: Sectionnews,
     Sectionvideo: Sectionvideo,
     Sectiondates: Sectiondates,
+    Sectionview: Sectionview,
+    Footer: Footer,
   },
 };
 </script>
